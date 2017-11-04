@@ -2,11 +2,11 @@
 @{
     ViewBag.Title = "Index";
 }
-<h2>Inser the match result here</h2>
 
+<h2 style="text-align:center">Inser the match result here</h2>
+<br />
 
-
-<div class="container">
+<div class="container" style="position:relative">
     <table id="insertMatchTable" class="table">
         <tr>
             <td>
@@ -47,9 +47,11 @@
         </tr>
     </table>
 </div>
+<div id="backGroundPicture"></div>
 
 @section scripts {
-    <script type="text/javascript" src="~/Scripts/AppScripts/extractSurfaces.js"></script>
-    <script type="text/javascript" src="~/Scripts/AppScripts/datePicker.js"></script>
-    <script type="text/javascript" src="~/Scripts/AppScripts/extractPlayers.js"></script>
+    <script type="text/javascript" src="~/AppScripts/extractSurfaces.js"></script>
+    <script type="text/javascript" src="~/AppScripts/datePicker.js"></script>
+    <script type="text/javascript" src="~/AppScripts/extractPlayers.js"></script>
+    <script type="text/javascript" src="~/AppScripts/changeBackgroundOnSurfaceChoice.js"></script>
 }
