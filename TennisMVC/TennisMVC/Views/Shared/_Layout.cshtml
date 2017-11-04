@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" type="text/css" href="~/Styles/InsertMatchStyle.css">
+  </head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <a href="@Url.Action("Index", "Home")"  class="navbar-brand" style="color:greenyellow">Welcome to Tennis Site!</a>
+            <div class="colapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="@Url.Action("Index", "Home")" class="navbar-brand" style="color:greenyellow">Home</a></li>
+                    <li><a href="@Url.Action("Index", "AddMatch")" class="navbar-brand" style="color:greenyellow">Insert Result</a></li>
+                    <li><a href="@Url.Action("Index", "Home")" class="navbar-brand" style="color:greenyellow">Ranking</a></li>
+                    <li><a href="@Url.Action("Index", "Gallery")" class="navbar-brand" style="color:greenyellow">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Atanas Drenovichki</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    
+</body>
+</html>

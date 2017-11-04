@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Inser the match result here</h2>
+
+
+
+<div class="container">
+    <table id="insertMatchTable" class="table">
+        <tr>
+            <td>
+                Select surface:
+            </td>
+            <td>
+                <select id="surfaceDropDown" data-style="btn-new" />
+            </td>
+            <td>
+                Select Date:
+            </td>
+            <td>
+                <div class="form-group">
+                    <div class='input-group date' id='datetime'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon-calendar glyphicon"></span>
+                        </span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Player 1
+            </td>
+            <td colspan="2">
+                Player 2
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <select id="playerOne" class="extractPlayersNamesDropDown" data-style="btn-new" />
+            </td>
+            <td colspan="2">
+                <select id="playerTwo" class="extractPlayersNamesDropDown" data-style="btn-new" />
+            </td>
+        </tr>
+    </table>
+</div>
+
+@section scripts {
+    <script type="text/javascript" src="~/Scripts/AppScripts/extractSurfaces.js"></script>
+    <script type="text/javascript" src="~/Scripts/AppScripts/datePicker.js"></script>
+    <script type="text/javascript" src="~/Scripts/AppScripts/extractPlayers.js"></script>
+}

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisMVC", "TennisMVC\TennisMVC.csproj", "{7B6C4DA1-2203-4C7C-B247-CC632799A6B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisDb", "TennisDb\TennisDb.csproj", "{59167CB7-D44A-400D-9AEB-BC810458B40C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{01016C0D-E64D-4B98-A83A-AF2BECB0F469}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B6C4DA1-2203-4C7C-B247-CC632799A6B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6C4DA1-2203-4C7C-B247-CC632799A6B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6C4DA1-2203-4C7C-B247-CC632799A6B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6C4DA1-2203-4C7C-B247-CC632799A6B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59167CB7-D44A-400D-9AEB-BC810458B40C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59167CB7-D44A-400D-9AEB-BC810458B40C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59167CB7-D44A-400D-9AEB-BC810458B40C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59167CB7-D44A-400D-9AEB-BC810458B40C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01016C0D-E64D-4B98-A83A-AF2BECB0F469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01016C0D-E64D-4B98-A83A-AF2BECB0F469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01016C0D-E64D-4B98-A83A-AF2BECB0F469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01016C0D-E64D-4B98-A83A-AF2BECB0F469}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00BDCD9C-317A-42AF-AF17-ECCEF519857D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://reallymemorable.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TennisMVC\\TennisMVC.csproj
+		SccProjectName1 = TennisMVC
+		SccLocalPath1 = TennisMVC
+		SccProjectUniqueName2 = TennisDb\\TennisDb.csproj
+		SccProjectName2 = TennisDb
+		SccLocalPath2 = TennisDb
+		SccProjectUniqueName3 = Repository\\Repository.csproj
+		SccProjectName3 = Repository
+		SccLocalPath3 = Repository
+	EndGlobalSection
+EndGlobal

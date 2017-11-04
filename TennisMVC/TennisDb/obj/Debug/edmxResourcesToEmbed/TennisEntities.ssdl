@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TennisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Match">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="SurfaceId" Type="int" />
+  </EntityType>
+  <EntityType Name="Outcome">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Player">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="PlayerResult">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlayerId" Type="int" />
+    <Property Name="MatchId" Type="int" />
+    <Property Name="FirstSet" Type="int" />
+    <Property Name="SecondSet" Type="int" />
+    <Property Name="ThirdSet" Type="int" />
+    <Property Name="OutcomeId" Type="int" />
+  </EntityType>
+  <EntityType Name="Surface">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Match_Surface">
+    <End Role="Surface" Type="Self.Surface" Multiplicity="0..1" />
+    <End Role="Match" Type="Self.Match" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Surface">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Match">
+        <PropertyRef Name="SurfaceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlayerResult_Match">
+    <End Role="Match" Type="Self.Match" Multiplicity="0..1" />
+    <End Role="PlayerResult" Type="Self.PlayerResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Match">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlayerResult">
+        <PropertyRef Name="MatchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlayerResult_Outcome">
+    <End Role="Outcome" Type="Self.Outcome" Multiplicity="0..1" />
+    <End Role="PlayerResult" Type="Self.PlayerResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Outcome">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlayerResult">
+        <PropertyRef Name="OutcomeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlayerResult_Player">
+    <End Role="Player" Type="Self.Player" Multiplicity="0..1" />
+    <End Role="PlayerResult" Type="Self.PlayerResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Player">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlayerResult">
+        <PropertyRef Name="PlayerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TennisModelStoreContainer">
+    <EntitySet Name="Match" EntityType="Self.Match" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Outcome" EntityType="Self.Outcome" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Player" EntityType="Self.Player" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlayerResult" EntityType="Self.PlayerResult" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Surface" EntityType="Self.Surface" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Match_Surface" Association="Self.FK_Match_Surface">
+      <End Role="Surface" EntitySet="Surface" />
+      <End Role="Match" EntitySet="Match" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlayerResult_Match" Association="Self.FK_PlayerResult_Match">
+      <End Role="Match" EntitySet="Match" />
+      <End Role="PlayerResult" EntitySet="PlayerResult" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlayerResult_Outcome" Association="Self.FK_PlayerResult_Outcome">
+      <End Role="Outcome" EntitySet="Outcome" />
+      <End Role="PlayerResult" EntitySet="PlayerResult" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlayerResult_Player" Association="Self.FK_PlayerResult_Player">
+      <End Role="Player" EntitySet="Player" />
+      <End Role="PlayerResult" EntitySet="PlayerResult" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
