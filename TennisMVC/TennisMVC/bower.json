@@ -1,0 +1,11 @@
+{
+  "name": "AngularApp",
+  "version": "1.0.0",
+  "authors": [
+    "Ryan Wischkaemper"
+  ],
+  "description": "A basic AngularJS app",
+  "dependencies": {
+    "sweetalert": "v2.0.7"
+  }
+}

@@ -3,25 +3,25 @@
     ViewBag.Title = "Index";
 }
 
-<h2 style="text-align:center">Inser the match result here</h2>
+<h2 style="text-align:center">Inser the score!</h2>
 <br />
 
 <div class="container" style="position:relative">
-    <table id="insertMatchTable" class="table">
+    <table id="insertMatchTable" class="table table-responsive" style="position:inherit;">
         <tr>
             <td>
                 Select surface:
             </td>
             <td>
-                <select id="surfaceDropDown" data-style="btn-new" />
+                <select class="form-control selcls" id="surfaceDropDown" />
             </td>
             <td>
                 Select Date:
             </td>
-            <td>
+            <td colspan="2">
                 <div class="form-group">
                     <div class='input-group date' id='datetime'>
-                        <input type='text' class="form-control" />
+                        <input type='text' class="form-control center-block" style="width:auto" />
                         <span class="input-group-addon">
                             <span class="glyphicon-calendar glyphicon"></span>
                         </span>
@@ -30,28 +30,44 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">
-                Player 1
+            <td colspan="2"></td>
+            <td><h3>Set 1 </h3> </td>
+            <td><h3>Set 2 </h3></td>
+            <td><h3>Set 3 </h3></td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <h2><select id="playerOne"  class="extractPlayersNamesDropDown form-control center-block" /></h2>
             </td>
-            <td colspan="2">
-                Player 2
+            <td>
+                <h2><input size="1" class="set form-control center-block" id="playerOneSetOne" /></h2>
             </td>
+
+            <td><h2><input size="1" class="set form-control center-block" id="playerOneSetTwo" /></h2></td>
+            <td><h2><input size="1" class="set form-control center-block" id="playerOneSetThree" /></h2></td>
         </tr>
         <tr>
             <td colspan="2">
-                <select id="playerOne" class="extractPlayersNamesDropDown" data-style="btn-new" />
+                <h2><select id="playerTwo" class="extractPlayersNamesDropDown form-control center-block" /></h2>
             </td>
-            <td colspan="2">
-                <select id="playerTwo" class="extractPlayersNamesDropDown" data-style="btn-new" />
-            </td>
+            <td><h2><input size="1" class="set form-control center-block" id="playerTwoSetOne" /></h2></td>
+            <td><h2><input size="1" class="set form-control center-block" id="playerTwoSetTwo" /></h2></td>
+            <td><h2><input size="1" class="set form-control center-block" id="playerTwoSetThree" /></h2></td>
         </tr>
+        <tr>
     </table>
 </div>
+<br />
+
+<input type="button" id="saveResult" value="Save and submit" />
 <div id="backGroundPicture"></div>
 
 @section scripts {
-    <script type="text/javascript" src="~/AppScripts/extractSurfaces.js"></script>
-    <script type="text/javascript" src="~/AppScripts/datePicker.js"></script>
-    <script type="text/javascript" src="~/AppScripts/extractPlayers.js"></script>
-    <script type="text/javascript" src="~/AppScripts/changeBackgroundOnSurfaceChoice.js"></script>
+    <script type="text/javascript" src="~/AppScripts/AddMatch/changeBackgroundOnSurfaceChoice.js"></script>
+    <script type="text/javascript" src="~/AppScripts/AddMatch/extractPlayers.js"></script>
+    <script type="text/javascript" src="~/AppScripts/AddMatch/extractSurfaces.js"></script>
+    <script type="text/javascript" src="~/AppScripts/AddMatch/datePicker.js"></script>
+    <script type="text/javascript" src="~/AppScripts/AddMatch/valdiateSetInput.js"></script>
+    <script type="text/javascript" src="~/AppScripts/AddMatch/validateTennisPlayers.js"></script>
+    <script type="text/javascript" src="~/AppScripts/AddMatch/validateSaveResult.js"></script>
 }

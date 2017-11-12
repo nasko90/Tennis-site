@@ -1,5 +1,5 @@
 ﻿$("#surfaceDropDown").change(function () {
-    debugger;   switch (this.value) {
+     switch (this.value) {
         case "Grass":
             document.getElementById("backGroundPicture").style.backgroundImage = "url('../Images/grass.jpg')";
             break;

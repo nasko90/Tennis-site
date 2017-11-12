@@ -7,6 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Styles/InsertMatchStyle.css" rel="stylesheet" />
+    <link href="~/Styles/sweetalert.css" rel="stylesheet" />
   </head>
 <body>
     <div class="navbar navbar-inverse">
@@ -15,13 +16,15 @@
             <div class="colapse navbar-collapse navHeaderCollapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="@Url.Action("Index", "Home")" class="navbar-brand" style="color:greenyellow">Home</a></li>
-                    <li><a href="@Url.Action("Index", "AddMatch")" class="navbar-brand" style="color:greenyellow">Insert Result</a></li>
+                    <li><a href="@Url.Action("Index", "AddMatch")" class="navbar-brand" style="color:greenyellow">Add Match</a></li>
                     <li><a href="@Url.Action("Index", "Home")" class="navbar-brand" style="color:greenyellow">Ranking</a></li>
+                    <li><a href="@Url.Action("Index", "Results")" class="navbar-brand" style="color:greenyellow">Results</a></li>
                     <li><a href="@Url.Action("Index", "Gallery")" class="navbar-brand" style="color:greenyellow">Gallery</a></li>
                 </ul>
             </div>
         </div>
     </div>
+
 
     <div class="container body-content">
         @RenderBody()

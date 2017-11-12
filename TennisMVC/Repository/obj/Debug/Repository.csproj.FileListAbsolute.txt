@@ -12,3 +12,17 @@ D:\Projects\ExampleAutomation\TennisMVC\Repository\obj\Debug\Repository.csprojRe
 D:\Projects\ExampleAutomation\TennisMVC\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
 D:\Projects\ExampleAutomation\TennisMVC\Repository\obj\Debug\Repository.dll
 D:\Projects\ExampleAutomation\TennisMVC\Repository\obj\Debug\Repository.pdb
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\Repository.dll.config
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\Repository.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\Repository.pdb
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\EntityFramework.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\TennisDb.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\TennisDb.pdb
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\TennisDb.dll.config
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\EntityFramework.xml
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\obj\Debug\Repository.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\obj\Debug\Repository.pdb

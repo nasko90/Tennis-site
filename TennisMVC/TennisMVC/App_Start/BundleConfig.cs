@@ -23,10 +23,12 @@ namespace TennisMVC
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js",
-                      "~/Scripts/bootstrap-datetimepicker.js"));
+                      "~/Scripts/bootstrap-datetimepicker.js",
+                      "~/Scripts/sweetalert.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-select.ccs",
                        "~/Content/bootstrap-datetimepicker.css",
                        "~/Content/site.css"));
         }

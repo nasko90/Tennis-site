@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+﻿$(document).ready(function extractPlayers () {
     $.getJSON("AddMatch/GetPlayersNames", {}, function (data) {
         var options = '<option value="">-- Select player --</option>';
         for (var i = 0; i < data.length; i++) {

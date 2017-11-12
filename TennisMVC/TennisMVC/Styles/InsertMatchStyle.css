@@ -1,8 +1,24 @@
-﻿td {
+﻿td{
     text-align: center;
     font-size: 20px;
+    align-content: center;
+    align-items:center;
+    align-self:center 
 }
 
+.set {
+    border-color: transparent;
+    width:auto;
+    text-align:center;
+}
+
+.form-control {
+    position:inherit;
+}
+
+.extractPlayersNamesDropDown {
+    font-size: 18px;
+}
 #backGroundPicture {
     background-position: center;
     background-repeat: no-repeat;
@@ -17,5 +33,24 @@
     opacity: 0.5;
     z-index: -1;
     background-image: url('../Images/images.jpg');
+}
+
+#saveResult {
+    background-color: cadetblue;
+    font-size: 20px;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.modal {
+    background-color: lightblue;
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
