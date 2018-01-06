@@ -154,3 +154,5 @@ C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisMVC\obj\Debug\TennisMVC.
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisMVC\obj\Debug\TennisMVC.csproj.CoreCompileInputs.cache
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisMVC\obj\Debug\TennisMVC.dll
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisMVC\obj\Debug\TennisMVC.pdb
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisMVC\bin\Models.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisMVC\bin\Models.pdb

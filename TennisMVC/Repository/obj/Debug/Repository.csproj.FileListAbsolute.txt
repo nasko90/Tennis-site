@@ -26,3 +26,5 @@ C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\obj\Debug\Repositor
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\obj\Debug\Repository.dll
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\obj\Debug\Repository.pdb
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\Models.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Repository\bin\Debug\Models.pdb

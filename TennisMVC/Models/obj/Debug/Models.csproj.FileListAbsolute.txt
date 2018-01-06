@@ -1,0 +1,6 @@
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Models\bin\Debug\Models.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Models\bin\Debug\Models.pdb
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Models\obj\Debug\Models.dll
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\Models\obj\Debug\Models.pdb

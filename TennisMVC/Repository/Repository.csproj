@@ -56,6 +56,10 @@
     <Compile Include="TennisRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{03760C83-5B7E-4B16-9D63-AC3DDDE19712}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TennisDb\TennisDb.csproj">
       <Project>{59167cb7-d44a-400d-9aeb-bc810458b40c}</Project>
       <Name>TennisDb</Name>

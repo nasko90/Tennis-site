@@ -1,4 +1,5 @@
-﻿using Repository;
+﻿using Models;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,6 +33,12 @@ namespace TennisMVC.Controllers
         {
             var playersNames = _tennisRepository.GetPlayersNames();
             return Json(playersNames, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult SaveResult(GameInfo gameInfo)
+        {
+            var saveResult = _tennisRepository.AddMatch(gameInfo); 
+            return Json(saveResult, JsonRequestBehavior.AllowGet);
         }
     }
 }

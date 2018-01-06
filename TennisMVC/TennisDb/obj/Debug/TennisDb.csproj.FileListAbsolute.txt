@@ -18,3 +18,4 @@ C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisDb\bin\Debug\EntityFrame
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisDb\obj\Debug\TennisDb.csproj.CoreCompileInputs.cache
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisDb\obj\Debug\TennisDb.dll
 C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisDb\obj\Debug\TennisDb.pdb
+C:\Users\Nadia\Source\Repos\Tennis-site\TennisMVC\TennisDb\obj\Debug\TennisDb.csprojResolveAssemblyReference.cache

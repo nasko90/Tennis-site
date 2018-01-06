@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Models;
+using System.Collections.Generic;
 
 namespace Repository
 {
@@ -6,5 +7,6 @@ namespace Repository
     {
         List<string> GetSurfaceTypes();
         List<string> GetPlayersNames();
+        bool AddMatch(GameInfo gameInfo);
     }
 }

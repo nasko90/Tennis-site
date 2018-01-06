@@ -158,11 +158,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\MatchInfoModel.cs" />
-    <Compile Include="Models\PlayerPositionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppScripts\AddMatch\addMatchResult.js" />
     <Content Include="AppScripts\AddMatch\changeBackgroundOnSurfaceChoice.js" />
     <Content Include="AppScripts\AddMatch\valdiateSetInput.js" />
     <Content Include="AppScripts\AddMatch\validateSaveResult.js" />
@@ -325,6 +324,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{03760C83-5B7E-4B16-9D63-AC3DDDE19712}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{01016C0D-E64D-4B98-A83A-AF2BECB0F469}</Project>
       <Name>Repository</Name>
